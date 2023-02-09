@@ -33,7 +33,7 @@ mongoose
   })
   .then(() => {
     console.log("db connected");
-  });
+  }).catch(err=>console.log(err))
 
 ////////testing//////////
 app.get("/", (req, res) => {
